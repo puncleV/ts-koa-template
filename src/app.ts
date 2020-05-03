@@ -1,8 +1,7 @@
-import { server } from './server';
+import {server} from "./server";
+import {config} from "../config";
 
-const port = 3000;
-
-server.listen(port);
+server.listen(config.port);
 
 // eslint-disable-next-line no-console
-console.log(`server started at: ${port}`);
+console.log(`server started at: ${config.port}`);
