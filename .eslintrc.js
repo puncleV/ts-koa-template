@@ -1,15 +1,15 @@
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-    'jest'
-  ],
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint", "jest"],
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:jest/recommended',
-  ]
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:jest/recommended",
+  ],
+  rules: {
+    "@typescript-eslint/interface-name-prefix": 0,
+  },
 };

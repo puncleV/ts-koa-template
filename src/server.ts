@@ -1,14 +1,14 @@
 import Koa from "koa";
 import bodyParser from "koa-bodyparser";
 import cors from "@koa/cors";
-import {greetingsRouter} from "./routes";
+import {topicsRouter} from "./routes";
 
 const app = new Koa();
 
 app.use(cors());
 app.use(bodyParser());
 
-app.use(greetingsRouter.routes());
-app.use(greetingsRouter.allowedMethods());
+app.use(topicsRouter.routes());
+app.use(topicsRouter.allowedMethods());
 
 export const server = app;
