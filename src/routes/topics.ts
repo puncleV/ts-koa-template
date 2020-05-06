@@ -12,4 +12,8 @@ router.get("/", (ctx: Koa.Context) => {
   ctx.body = controller.getAll();
 });
 
+router.get("/:topicId", (ctx: Koa.Context) => {
+  ctx.body = controller.getOne(ctx.params.topicId);
+});
+
 export const topicsRouter = router;
