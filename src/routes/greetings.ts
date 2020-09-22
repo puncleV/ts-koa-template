@@ -1,11 +1,12 @@
-import Router from 'koa-router';
-import {Greeter} from "../Greeter";
+import Router from "koa-router";
+
+import { Greeter } from "../Greeter";
 
 const router = new Router({
-  prefix: '/greetings',
+  prefix: "/greetings",
 });
 
-router.get('/:name', (ctx) => {
+router.get("/:name", (ctx) => {
   const greeter = new Greeter(ctx.params.name);
 
   ctx.body = greeter.greeting();

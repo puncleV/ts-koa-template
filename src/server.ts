@@ -1,6 +1,7 @@
-import Koa from 'koa';
-import bodyParser from 'koa-bodyparser';
-import {greetingsRouter} from "./routes";
+import Koa from "koa";
+import bodyParser from "koa-bodyparser";
+
+import { greetingsRouter } from "./routes";
 
 const app = new Koa();
 
